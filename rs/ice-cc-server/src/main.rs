@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 use std::io::{self, Write};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 enum Value {
     Number(f64),
     Str(String),
