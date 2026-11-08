@@ -1,0 +1,9 @@
+[package]
+name = "ice-cc-client"
+version = "0.1.0"
+edition = "2024"
+
+# Deliberately no [dependencies]: this client uses only the Rust standard
+# library so it compiles to the smallest possible binary and needs nothing to
+# be installed on the target machine. TCP uses `std::net::TcpStream`; HTTP is
+# a hand-written HTTP/1.1 POST. See src/send.rs.

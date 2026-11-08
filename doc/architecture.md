@@ -1,8 +1,10 @@
 # Architecture
 
-This document walks through how `ice-cc-server` is put together. It assumes you
-know what a thread is, what a function is, and roughly what networking means,
-but not necessarily how Rust's `async`/`await` or ownership model work.
+This document walks through how `ice-cc-server` (the control center) is put
+together. It assumes you know what a thread is, what a function is, and roughly
+what networking means, but not necessarily how Rust's `async`/`await` or
+ownership model work. For the other half of the system — the remote
+`ice-cc-client` beacon — see [`client.md`](client.md).
 
 ## The big picture
 

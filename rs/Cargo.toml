@@ -1,0 +1,16 @@
+# Cargo workspace manifest for the Rust programs in this repository.
+#
+# A "workspace" is just a way to group related crates so they can be built and
+# tested together (one `cargo` invocation at this directory), while each crate
+# keeps its own, independent dependency list. The two members are:
+#
+#   * `ice-cc-server` — the TUI control center (runs the TCP + HTTP servers).
+#   * `ice-cc-client` — the remote client that sends data to those servers.
+#
+# Because the client is meant to run on a remote machine, keeping it as its own
+# crate matters: it builds and ships as a small, dependency-free binary instead
+# of inheriting the server's heavy TUI/web stack.
+
+[workspace]
+members = ["ice-cc-server", "ice-cc-client"]
+resolver = "2"

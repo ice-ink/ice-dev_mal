@@ -652,6 +652,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "ice-cc-client"
+version = "0.1.0"
+
+[[package]]
 name = "ice-cc-server"
 version = "0.1.0"
 dependencies = [
