@@ -1,0 +1,17 @@
+# Rust build artifacts
+/target/
+**/target/
+**/*.rs.bk
+
+# Cargo lock file (Keep this for applications; uncomment for libraries)
+# Cargo.lock
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
